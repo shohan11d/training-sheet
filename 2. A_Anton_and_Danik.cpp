@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
+int main() {
   ios::sync_with_stdio(false);
   cin.tie(nullptr);
 
@@ -12,33 +11,25 @@ int main()
 
   vector<char> v(n);
 
-  for (int i = 0; i < n; i++)
-  {
+  for (int i = 0; i < n; i++) {
     cin >> v[i];
   }
 
-  for (auto it : v)
-  {
+  for (auto it : v) {
     if (it == 'A')
       anton++;
     else if (it == 'D')
       danik++;
-    else
-    {
+    else {
       cout << "Friendship" << endl;
     }
   }
 
-  if (anton > danik)
-  {
+  if (anton > danik) {
     cout << "Anton" << endl;
-  }
-  else if (danik > anton)
-  {
+  } else if (danik > anton) {
     cout << "Danik" << endl;
-  }
-  else
-  {
+  } else {
     cout << "Friendship" << endl;
   }
   return 0;
