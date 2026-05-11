@@ -24,3 +24,4 @@ int main() {
   cout << width;
   return 0;
 }
+
