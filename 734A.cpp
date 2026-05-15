@@ -15,7 +15,7 @@ int main() {
     cin >> v[i];
   }
 
-  for (auto it : v) {
+  for (char it : v) {
     if (it == 'A')
       anton++;
     else if (it == 'D')
@@ -34,3 +34,21 @@ int main() {
   }
   return 0;
 }
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+//     int n, anton = 0, danik = 0;
+//     string s;
+
+//     cin >> n >> s;
+
+//     for (char c : s)
+//         (c == 'A') ? anton++ : danik++;
+
+//     cout << (anton > danik ? "Anton"
+//             : danik > anton ? "Danik"
+//             : "Friendship");
+// }

@@ -5,22 +5,24 @@ int main() {
   ios::sync_with_stdio(false);
   cin.tie(nullptr);
 
-  vector<vector<int>> matrix(5, vector<int>(5));
+  int rows = 5;
+  int cols = 5;
 
-  for (int i = 0; i < 5; i++) {
-    for (int j = 0; j < 5; j++) {
+  vector<vector<int>> matrix(rows, vector<int>(cols));
+
+  for (int i = 0; i < rows; i++) {
+    for (int j = 0; j < cols; j++) {
       cin >> matrix[i][j];
     }
   }
 
-  for (int i = 0; i < 5; i++) {
-    for (int j = 0; j < 5; j++) {
-      //   cout << matrix[i][j] << endl;
+  for (int i = 0; i < rows; i++) {
+    for (int j = 0; j < cols; j++) {
       if (matrix[i][j] == 1) {
         cout << abs(2 - i) + abs(2 - j);
       }
     }
-    cout << endl;
   }
+
   return 0;
 }
